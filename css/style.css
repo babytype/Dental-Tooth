@@ -261,6 +261,7 @@ h1 {
   /* display: none; */
   transition: 0.5s ease;
   transform: translateX(110%);
+  z-index: 12;
 }
 .mobile-menu.is-active{
   transform: none;
