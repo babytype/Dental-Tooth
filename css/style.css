@@ -137,6 +137,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h1 {
+	font-weight: 700;
+	font-size: 62px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -368,7 +372,7 @@ table {
 	max-width: 483px;
 	width: 100%;
 	position: relative;
-    z-index: 1;
+  z-index: 1;
 }
 .banner-circle {
 	width: 218px;
@@ -396,11 +400,54 @@ table {
     margin-right: 20px;
   }
 }
-@media screen and (max-width:992px){
-  .header-top-right,
-  .menu-nav{
-    display: none;
-  }
+@media screen and (max-width: 992px) {
+	.header-top-right,
+	.menu-nav {
+		display: none;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+	.s-banner {
+		padding-top: 40px;
+		padding-bottom: 35px;
+	}
+	.banner-left {
+		margin-bottom: 30px;
+	}
+	.banner-row {
+		flex-direction: column;
+		position: relative;
+	}
+	.banner-title {
+		font-size: 40px;
+	}
+	.banner-description {
+		font-size: 16px;
+	}
+	.banner-btn {
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		white-space: nowrap;
+	}
+
+	.banner-right {
+		margin-right: auto;
+	}
+	.banner-circle {
+		width: 50px;
+	}
+	.banner-image {
+		max-width: 330px;
+		left: -20px;
+	}
+	.banner-logo {
+		top: 100px;
+	}
 }
 @media screen and (max-width:576px) {
   .header-top-location{
