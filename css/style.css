@@ -115,6 +115,7 @@ body {
   font: "Source Sans Pro";
   padding-bottom: 20px;
   color:#302d2d;
+  position: relative;
 }
 a{
 	text-decoration: none;
@@ -650,12 +651,25 @@ max-width: 488px;
 
   /* Reviews Start */
   .s-reviews {
-    padding: 90px 0;
+    padding: 90px 30px;
+    position: relative;
+  }
+  .s-reviews::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(50, 48, 48, 0.39);
   }
   .reviews-wrap {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
     padding: 55px 30px 70px 30px;
+    position: relative;
+    z-index: 1;
   }
   .s-reviews .def-title {
     text-align: center;
@@ -665,6 +679,21 @@ max-width: 488px;
     display: flex;
     max-width: 780px;
     margin: 0 auto;
+  }
+  .reviews-row::after{
+    content: '';
+    background-image: url('../img/quote.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 84px;
+    height: 64px;
+    display: block;
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 55px;
   }
   .reviews-avatar {
     border-radius: 100%;
@@ -735,7 +764,7 @@ max-width: 488px;
     border-radius: 100%;
     min-width: 60px;
     height: 60px;
-    top: 50%;
+    top: calc(50% - 30px);
     transform: translateY(-50%);
   }
   .s-reviews .swiper-button-prev {
@@ -908,6 +937,31 @@ max-width: 488px;
 	}
    /* News 992 End */
 
+  @media screen and(max-width:768px) {
+    /* Reviews 768 Start */
+    .reviews-wrap{
+      padding: 55px 30px 70px 30px;
+    }
+    .reviews-row{
+      display: block;
+    }
+    .reviews-avatar{
+      min-width: 200px;
+      max-width: 200px;
+      height: 200px;
+      margin: 0 auto 24px auto;
+    }
+    .reviews-text{
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .reviews-name{
+      font-size: 18px;
+    }
+    /* Reviews 768 End */
+  }
+
+
 }
 @media screen and (max-width:576px) {
   .def-title {
@@ -1041,5 +1095,28 @@ max-width: 488px;
 		padding: 14px;
 	}
   /* News 576 End */
+
+  /* Reviews 576 Start */
+  .s-reviews {
+    padding: 50px 0;
+  }
+  .reviews-wrap{
+    padding: 30px 20px;
+  }
+  .s-reviews .def-title{
+    margin-bottom: 30px;
+  }
+  .s-reviews .swiper-button-prev,
+  .s-reviews .swiper-button-next{
+    min-width: 50px;
+    height: 50px;
+  }
+  .s-reviews .swiper-button-prev{
+    left: -30px;
+  }
+  .s-reviews .swiper-button-next{
+    right: -30px;
+  }
+  /* Reviews 576 End */
 }
 /* Responsive end */
