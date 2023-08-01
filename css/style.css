@@ -1098,6 +1098,108 @@ max-width: 488px;
   }
   /* Single End */
 
+  /* Contacts page Start */
+.s-contacts {
+	padding: 60px 0;
+}
+.s-contacts .def-title {
+	text-align: center;
+}
+
+.contacts-row {
+	display: flex;
+	column-gap: 20px;
+}
+.contacts-item {
+	width: 25%;
+	padding: 50px 30px;
+	border-radius: 5px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.contacts-item:nth-child(1) {
+	background-color: #5EB8F0;
+}
+.contacts-item:nth-child(2) {
+	background-color: #54A0CF;
+}
+.contacts-item:nth-child(3) {
+	background-color: #29A9F9;
+}
+.contacts-item:nth-child(4) {
+	background-color: #328DC6;
+}
+.contacts-name {
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.contacts-icon {
+	margin-bottom: 20px;
+}
+.contacts-icon img {
+	width: 35px;
+}
+.contacts-descr {
+	font-size: 18px;
+}
+.contacts-social {
+	margin-top: 5px;
+}
+.contacts-social a:nth-last-child(n+2) {
+	margin-right: 20px;
+}
+
+.s-contacts-form {
+	margin: 60px auto 0 auto;
+	max-width: 560px;
+}
+.contacts-form-title {
+	font-size: 42px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.s-contacts .wpcf7-form p {
+	margin-bottom: 20px;
+}
+.s-contacts input, 
+.s-contacts textarea {
+	appearance: none;
+	border: 1px solid #E4E4E4;
+	font-family: 'Source Sans Pro';
+	padding: 18px 22px;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 18px;
+	outline: none;
+}
+.s-contacts textarea {
+	height: 256px;
+}
+.s-contacts input::placeholder, 
+.s-contacts textarea::placeholder {
+	color: #B9B9B9;
+}
+.s-contacts .wpcf7-submit {
+	background-color: #F86D6D;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	padding: 15px;
+	width: 100%;
+	cursor: pointer;
+	transition: background-color 0.35s ease;
+}
+.s-contacts .wpcf7-submit:hover {
+	background-color: #DD5959;
+}
+/* Contacts page End */
+
 
   /* Footer Start */
 .site-footer {
@@ -1364,6 +1466,21 @@ max-width: 488px;
 		margin-bottom: 20px;
 	}
    /* Blog single End */
+
+   /* Contacts page 992 Start */
+   .contacts-form-title {
+		font-size: 36px;
+	}
+	.contacts-row {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.contacts-item {
+		width: calc(50% - 10px);
+	}
+
+
+   /* Contacts page 992 End */
 
    /* Footer 992 Start */
 	.footer-row {
@@ -1642,6 +1759,45 @@ max-width: 488px;
 	}
   /* Blog page 576 End */
 
+
+  /* Contacts page 576 Start */
+  .s-contacts {
+		padding: 40px 0;
+	}
+	.s-contacts .def-title-wrapper {
+		margin-bottom: 25px;
+	}
+	.contacts-row {
+		gap: 10px;
+	}
+	.contacts-item {
+		width: calc(50% - 5px);
+		padding: 40px 20px;
+	}
+	.contacts-icon img {
+		width: 30px;
+	}
+	.contacts-icon {
+		margin-bottom: 10px;
+	}
+	.contacts-name {
+		font-size: 20px;
+	}
+	.contacts-descr {
+		font-size: 16px;
+	}
+
+	.contacts-form-title {
+		margin-bottom: 30px;
+	}
+	.s-contacts input, 
+	.s-contacts textarea {
+		font-size: 16px;
+		padding: 15px 20px;
+	}
+  /* Contacts page 576 End */
+ 
+
   /* Footer 576 Start */
 	.footer-row {}
 	.footer-logo {
@@ -1670,5 +1826,18 @@ max-width: 488px;
 
 
 
+}
+
+@media screen and (max-width: 360px) {
+	.contacts-row {
+		column-gap: 0;
+	}
+	.contacts-item {
+		width: 100%;
+	}
+
+	.dentist-contacts-row {
+		column-gap: 10px;
+	}
 }
 /* Responsive end */
