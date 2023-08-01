@@ -1200,6 +1200,86 @@ max-width: 488px;
 }
 /* Contacts page End */
 
+  /* Dentists page Start */
+  .s-dentist {
+    padding: 60px 0;
+  }
+  .s-dentist .def-title {
+    font-weight: normal;
+    font-weight: 400;
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+  .dentist-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  .dentist-left {
+    margin-right: 64px;
+    box-shadow: -1px 1px 11px 3px rgba(46, 44, 44, 0.21);
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 400px;
+  }
+  .dentist-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+  
+  .dentist-list {
+    color: #56565E;
+  }
+  .dentist-list:nth-last-child(n+2) {
+    margin-bottom: 32px;
+  }
+  .dentist-list-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .dentist-list ul li {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .dentist-list ul li:nth-last-child(n+2) {
+    margin-bottom: 10px;
+  }
+  .dentist-list ul li::before {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background-color: #5EB8F0;
+    margin-right: 10px;
+  }
+  .dentist-schedule-item {
+    color: #56565E;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .dentist-schedule-item:nth-last-child(n+2) {
+    margin-bottom: 5px;
+  }
+  
+  .dentist-contacts-row .contacts-item {
+    width: 33.3%;
+    padding: 78px 50px;
+  }
+  .dentist-contacts-row .contacts-item:nth-child(1) {
+    background-color: #54A0CF;
+  }
+  .dentist-contacts-row .contacts-item:nth-child(2) {
+    background-color: #29A9F9;
+  }
+  .dentist-contacts-row .contacts-item:nth-child(3) {
+    background-color: #328DC6;
+  }
+  /* Dentists page End */
 
   /* Footer Start */
 .site-footer {
@@ -1479,8 +1559,88 @@ max-width: 488px;
 		width: calc(50% - 10px);
 	}
 
-
    /* Contacts page 992 End */
+
+   /* Dentist page 992 Start */
+   .s-dentist {
+    padding: 60px 0;
+  }
+  .s-dentist .def-title {
+    font-weight: normal;
+    font-weight: 400;
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+  .dentist-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  .dentist-left {
+    margin-right: 64px;
+    box-shadow: -1px 1px 11px 3px rgba(46, 44, 44, 0.21);
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 400px;
+  }
+  .dentist-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+  
+  .dentist-list {
+    color: #56565E;
+  }
+  .dentist-list:nth-last-child(n+2) {
+    margin-bottom: 32px;
+  }
+  .dentist-list-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .dentist-list ul li {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .dentist-list ul li:nth-last-child(n+2) {
+    margin-bottom: 10px;
+  }
+  .dentist-list ul li::before {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background-color: #5EB8F0;
+    margin-right: 10px;
+  }
+  .dentist-schedule-item {
+    color: #56565E;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .dentist-schedule-item:nth-last-child(n+2) {
+    margin-bottom: 5px;
+  }
+  
+  .dentist-contacts-row .contacts-item {
+    width: 33.3%;
+    padding: 78px 50px;
+  }
+  .dentist-contacts-row .contacts-item:nth-child(1) {
+    background-color: #54A0CF;
+  }
+  .dentist-contacts-row .contacts-item:nth-child(2) {
+    background-color: #29A9F9;
+  }
+  .dentist-contacts-row .contacts-item:nth-child(3) {
+    background-color: #328DC6;
+  }
+   /* Dentist page 992 End */
 
    /* Footer 992 Start */
 	.footer-row {
@@ -1796,6 +1956,27 @@ max-width: 488px;
 		padding: 15px 20px;
 	}
   /* Contacts page 576 End */
+
+  /* Dentist page 576 Start */
+	.dentist-left {
+		min-width: auto;
+	}
+	.s-dentist .def-title {
+		font-size: 36px;
+		margin-bottom: 25px;
+	}
+	.dentist-contacts-row .contacts-item {
+		padding: 30px 20px;
+		width: calc(50% - 5px);
+	}
+	.dentist-contacts-row .contacts-name {
+		font-size: 18px;
+	}
+	.dentist-contacts-row .contacts-descr {
+		font-size: 14px;
+	}
+
+  /* Dentist page 576 Start */
  
 
   /* Footer 576 Start */
